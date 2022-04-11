@@ -18,21 +18,21 @@ driver.switch_to.window(now_handle)
 driver.find_element_by_xpath('//*[@id="mt_5"]/div[2]/div[3]/input').clear()
 driver.find_element_by_xpath('//*[@id="mt_5"]/div[3]/div[3]/input').clear()
 #填写账号密码
-driver.find_element_by_xpath('//*[@id="mt_5"]/div[2]/div[3]/input').send_keys("202************")	# 账号
-driver.find_element_by_xpath('//*[@id="mt_5"]/div[3]/div[3]/input').send_keys("your password")	# 密码
+driver.find_element_by_xpath('//*[@id="mt_5"]/div[2]/div[3]/input').send_keys("202122332015620")	# 账号
+driver.find_element_by_xpath('//*[@id="mt_5"]/div[3]/div[3]/input').send_keys("Ling101107!")	# 密码
 #
 driver.find_element_by_xpath('//*[@id="mt_5"]/div[5]/div/input').click()
 
-#缓10秒
+# 缓10秒
 time.sleep(10)
 real_mid_page_url = driver.find_element_by_xpath("//*[@id='zzj_top_6s']").get_attribute("src")
 driver.get(real_mid_page_url)
 
 driver.find_element_by_xpath('//*[@id="bak_0"]/div[11]/div[3]/div[4]/span').click()
 
-#缓30秒，等网页获取完地址
+# 缓30秒，等网页获取完地址
 time.sleep(30)
-#点击填报
+#点击确认
+driver.find_element_by_xpath('//*[@id="bak_0"]/div[7]/div[2]/div[2]/div[6]/div[4]/span').click()
 driver.find_element_by_xpath('//*[@id="bak_0"]/div[7]/div[4]/span').click()
 time.sleep(2)
-
