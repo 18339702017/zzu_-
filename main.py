@@ -18,8 +18,8 @@ driver.switch_to.window(now_handle)
 driver.find_element_by_xpath('//*[@id="mt_5"]/div[2]/div[3]/input').clear()
 driver.find_element_by_xpath('//*[@id="mt_5"]/div[3]/div[3]/input').clear()
 #填写账号密码
-driver.find_element_by_xpath('//*[@id="mt_5"]/div[2]/div[3]/input').send_keys("202122332015620")	# 账号
-driver.find_element_by_xpath('//*[@id="mt_5"]/div[3]/div[3]/input').send_keys("Ling101107!")	# 密码
+driver.find_element_by_xpath('//*[@id="mt_5"]/div[2]/div[3]/input').send_keys("202************")	# 账号
+driver.find_element_by_xpath('//*[@id="mt_5"]/div[3]/div[3]/input').send_keys("your password")	# 密码
 #
 driver.find_element_by_xpath('//*[@id="mt_5"]/div[5]/div/input').click()
 
